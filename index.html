@@ -1,30 +1,28 @@
 <!DOCTYPE html>
 <html>
-    <head>
+	<head>
 		<style>
 			body{
 				background-color:pink;
 			}
 		</style>
-        <title>CUSTOM FILTER</title>
-		<meta charset="utf-8">
-		<script type="text/javascript">
-			var name=window.prompt("Enter your register number");
+		<title>CUSTOM FILTER</title>
+		<meta charset = "utf-8">
+		<script type = "text/javascript">
+			var name = window.prompt("Enter your register number");
 		</script>
-		<script type="text/javascript" src="angular.min.js"></script>
-		<script type="text/javascript" src="app1.js"></script>
+		<script type = "text/javascript" src = "angular.min.js"></script>
+		<script type = "text/javascript" src = "app1.js"></script>
 	</head>
 	<body ng-app = 'filApp'>
-    <h1>Custom Filter Demo</h1>
+	<h1>Custom Filter Demo</h1>
 	<div ng-controller = 'filController'>
-	<strong>Original:</strong> {{sayMessage()}}
-	<br>
-    <strong>Likes:</strong> {{sayLikesMessage()}}
-	<br>
-	<strong>LikesAll:</strong> {{sayLikesMessage() | likesall : "p" : "is a student from IT dept 3rd year" }}
-	<br>
-    </div>
-  	</body>
+		<strong>Original:</strong> {{sayMessage()}}
+		<br>
+		<strong>Likes:</strong> {{sayLikesMessage()}}
+		<br>
+		<strong>LikesAll:</strong> {{sayLikesMessage() | likesall : "p" : "is a student from IT department 3rd year" }}
+		<br>
+	</div>
+	</body>
 </html>
-
-
